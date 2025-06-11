@@ -127,11 +127,3 @@ const Rango = () => {
 
 export default Rango;
 
-// {
-//     "apiKey":"b394182b-1b5c-4d07-80c5-cea5b8eb4ffe",
-//     "rateLimitPerSecond": 1,
-//     "title": "ChainAction",
-//     "allowedDomains": [
-//         "http://localhost:3000"
-//     ]
-// }

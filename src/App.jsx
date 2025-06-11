@@ -1,6 +1,6 @@
 import Rango from './components/swap/Rango'
-import Exchange from './components/exchange/Exchange'
 import Home from './components/pages/Home'
+
 
 import {
   Route,
@@ -14,11 +14,9 @@ function App() {
 
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path='/' element={<MainLayout />}>
+      <Route path='/*' element={<MainLayout />}>
         <Route index element={<Home />} />
-        <Route path='swap/*' element={<Rango />} />
-        <Route path='exchange' element={<Exchange />} />
-        <Route path='buy' element={<Rango />} />
+        <Route path='exchange/*' element={<Rango />} />
       </Route >
     ),
     {
@@ -28,7 +26,7 @@ function App() {
     }
   )
   return (
-            <RouterProvider router={router} />
+    <RouterProvider router={router} />
   );
 }
 
